@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* height元素高，line-height：元素内文本高 */
+.h{
+    position: static;
+    background: #333;
+    height: 40px;
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.nva {
+    margin: 0 auto;
+    width: 1226px;
+    height: 40px;
+}
+.left_nva {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.right_nva {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+li {
+    float: left;
+    /* list-style: none; */
+    margin: 0 3px;
+}
+a {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+a:hover {
+    color: white;
+    display: block;
+}
+
+span {
+    float: left;
+    list-style: none;
+    margin: 0 3px;
+}
+.em {
+    color: #424242;
+    font-size: 10px;
+}

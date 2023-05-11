@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+  }
+body {
+    font-family: "Raleway";
+}
+.test {
+    background: rebeccapurple;
+    margin-top: 10px;
+    padding-top: 10px;
+    border: 5px solid red;
+    display: inline-block;
+    /* border-style: solid;
+    border-color: aqua; */
+}
+
+.test2{
+    background: #0B2027;
+    font-size: large;
+    color: aqua;
+    /* display: inline-block; */
+    /* margin: auto; */
+
+}
+
+.memu {
+    background-color: #0B2027;
+}
+.memu__row {
+    width: 90%;
+}
+.memu__list {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 1.2rem;
+}
+
+.memu__link {
+    display: block;
+    text-decoration: none;
+    padding: 1.5rem;
+    color: white;
+    font-weight: 500;
+    -webkit-transform: .3s;
+            transform: .3s;
+}
+
+.memu__link:hover {
+    text-decoration: none;
+    background: #16414f;
+}
+
+.cf:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.father {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: cornsilk;
+
+}
+
+.child {
+    /* 位置居中 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background: red;
+
+}

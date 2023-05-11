@@ -1,0 +1,132 @@
+/* 通用样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* 头部样式 */
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  header h1 {
+    font-size: 2em;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-right: 1em;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* 特色产品样式 */
+  #featured-products {
+    max-width: 80%;
+    margin: 2em auto;
+  }
+  
+  #featured-products h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  #featured-products ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  #featured-products li {
+    flex-basis: calc(33.33% - 1em);
+  }
+  
+  #featured-products img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #featured-products h3 {
+    margin: 0.5em 0;
+  }
+  
+  #featured-products p {
+    margin: 0.5em 0;
+    font-size: 0.8em;
+    color: #888;
+  }
+  
+  #featured-products span {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  /* 其他产品样式 */
+  #other-products {
+    max-width: 80%;
+    margin: 2em auto;
+  }
+  
+  #other-products h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  #other-products ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  #other-products li {
+    flex-basis: calc(33.33% - 1em);
+    margin-bottom: 1em;
+  }
+  
+  #other-products img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #other-products h3 {
+    margin: 0.5em 0;
+  }
+  
+  #other-products p {
+    margin: 0.5em 0;
+    font-size: 0.8em;
+    color: #888;
+  }
+  
+  #other-products span {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  /* 脚注样式 */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  

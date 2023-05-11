@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function changeImg() {
+            e1 = document.getElementById("img1")
+            x = document.getElementById("p1")
+            if (e1.src.match("bulbon")) {
+                e1.src="https://www.runoob.com/images/pic_bulboff.gif"
+                x.style.color='red'
+            } else {
+                e1.src="https://www.runoob.com/images/pic_bulbon.gif"
+            }
+        }
+    </script>
+    <h1>我的Web页面</h1>
+    <p id="p1"> 一个段落</p>
+    <div id="d1"> 一个DIV</div>
+    <button type="button" onclick="alert('SB')">点我!</button>
+
+<img id="img1" onclick="changeImg()" src="https://www.runoob.com/images/pic_bulboff.gif" width="100" height="180">
+</body>
+</html>

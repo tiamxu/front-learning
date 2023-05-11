@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="lunbo.css">
+</head>
+<body>
+    <p id="para"> Helo world</p>
+    <div class="banner_container">
+        <ul class="img_box">
+            <li><img src="image/banner-4.webp" alt=""></li>
+            <li><img src="image/banner-1.jpg" alt=""></li>
+            <li><img src="image/banner-2.webp" alt=""></li>
+            <li><img src="image/banner-3.webp" alt=""></li>
+            <li><img src="image/banner-4.webp" alt=""></li>
+            <li><img src="image/banner-1.jpg" alt=""></li>
+        </ul>
+
+        <ul class="sel_box">
+            <li data-index="0"></li>
+            <li data-index="1"></li>
+            <li data-index="2"></li>
+            <li data-index="3"></li>
+        </ul>
+        <div class="left_btn" >&lt; </div>
+        <div class="right_btn">&gt;</div>
+    </div>
+ 
+    <button type="button" onclick="displayDate()"> 确定</button>
+    <script src="./js/lunbo.js"></script>
+
+</body>
+</html>

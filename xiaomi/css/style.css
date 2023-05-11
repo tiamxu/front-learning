@@ -1,0 +1,245 @@
+/* 设置自定义字体 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.ttf');
+}
+[class*=iconfont] {
+    font-family: iconfont!important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+body {
+    min-width: 1226px;
+    background-color: #fff;
+    font: 14px/1.5 arial,'Microsoft Yahei','Hiragino Sans GB',sans-serif;
+    color: #333;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1226px;
+    height: 40px;
+}
+/* 顶部导航栏 */
+.site-topbar {
+    /* position: static; */
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    background: #333;
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+.sep {
+    font-size: 22px;
+    font-family: sans-serif;
+    color: #424242;
+}
+.site-topbar .topbar-nav {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 3px;
+
+}
+.site-topbar a {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+.site-topbar .topbar-nav a:hover,
+.site-topbar .topbar-user a:hover
+{
+    color: white;
+    display: block;
+}
+
+.topbar-nav li {
+    float: left;
+    list-style: none;
+    margin: 0 3px;
+}
+.topbar-user {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+
+}
+
+.topbar-user span:first-of-type{
+    padding-left: 0;
+}
+.topbar-user span:last-child {
+    padding-right: 0;
+    border: none;
+}
+.topbar-cart {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+.site-topbar .topbar-cart{
+    width: 120px;
+    margin-left: 15px;
+}
+.site-topbar .topbar-cart .cart {
+    position: relative;
+    z-index: 32;
+    display: block;
+    height: 39px;
+    background: #424242;
+    line-height: 40px;
+    color: #b0b0b0;
+    text-align: center;
+}
+.site-topbar .topbar-user span{
+    float: left;
+    list-style: none;
+    margin: 0 3px;
+}
+
+.iconfont-cart:before{
+    content: "\E60C";
+  }
+.site-topbar .topbar-cart em {
+    margin-right: 4px;
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: -4px;
+  }
+ 
+  .site-topbar .topbar-cart a:hover {
+    background: #fff;
+    color: #ff6700;
+  }
+  .site-nav {
+    position: relative;
+    height: 100px;
+  }
+  .site-nav-logo{
+    position: absolute;
+    top: 22px;
+    display: block;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    background-color: #ff6700;
+    *background: url(../image/mi-logo.png) no-repeat 50% 50%;
+  }
+  
+  .site-nav-logo::before{
+    background: url(../image/mi-logo.png) no-repeat 50% 50%;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 55px;
+    height: 55px;
+    content: "";
+  }
+  .site-nav ul {
+    list-style: none;
+    font-size: 16px;
+    padding-top: 36px;
+  }
+.site-nav li {
+    float: left;
+    color: #333333;
+    padding: 12px 0 0 30px;
+}
+.site-nav li:first-child{
+    padding-left: 205px;
+}
+.site-nav li>a:hover {
+    color: #ff6700;
+}
+
+.swiper-container{
+  z-index: 0 !important;
+}
+/* banner */
+.swiper-container{
+  --swiper-theme-color: #ff6600;/* 设置Swiper风格 */
+  --swiper-navigation-color: #b9b9ba;/* 单独设置按钮颜色 */
+  --swiper-navigation-size: 35px;/* 设置按钮大小 */
+}
+
+.site-banner{
+    position: relative;
+    width: 1226px;
+    height: 670px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .swiper-container{
+    z-index: 0 !important;
+    /* width: 500%;
+    height: 100%; */
+    left: 0;
+    font-size: 0;
+    position: absolute;
+    transform: translateX(-400px); /* 初始位置位移 */  
+  }
+
+  .swiper-container .sel_box {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sel_box li {
+  list-style: none;
+  /* 转换为行内块元素 -- 一行显示 */
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: pink;
+  margin-right: 3px;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+/* 左箭头 */
+.left_btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 30px;
+  background-color: #fff;
+  line-height: 30px;
+  padding-left: 3px;
+  /* 将鼠标样式改为小手 */
+  cursor: pointer;
+}
+
+.right_btn {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 30px;
+  background-color: #fff;
+  line-height: 30px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+
+/* 当前图片的小图点样式 */
+.sel_box .cur {
+  background-color: red!important;
+  transform: scale(1.3);
+}
+  .swiper-container  img{
+    width: 1226px;
+    height: 460px;
+    display: block;
+    float: left;
+    /* margin: 0 auto; */
+  } 
+  
+  

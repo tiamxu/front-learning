@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.nav li{
+    float: left;
+    /* margin-right: 10px; */
+    width: 80px;
+    padding: 10px;
+    list-style: none;
+    background-color: antiquewhite;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 100px 50px;
+    text-align: center;
+    font-size: 14px;
+    display: block;  
+}
+.nav a {
+    display: block;
+}
+
+.box3-1 {
+    width: 234px;
+    height: 460px;
+    background-color: rgba(128, 128, 128, .5);
+    margin-left: 100px;
+
+}
+.box3-1 ul{
+    height: 418px;
+    padding: 20px 0px;
+    position: relative;
+    border-right: 1px solid;
+}
+.box3-1 li{
+    list-style: none;
+    padding: 0px 23px 0px 30px;
+    height: 42px;
+    line-height: 42px;
+}
+.box3-1 li>a {
+    /* 文本修饰，去掉下划线*/
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 14px;
+}
+.box3-1 li:hover {
+    background-color: rgb(255, 103, 0);
+}
+.box3-1 sidebar {
+    position: absolute;
+    left: 236px;
+    top: 0px;
+    width: 994px;
+    height: 460px;
+    background-color: rgb(162, 79, 79);
+    box-shadow: 0px 0px 5px;
+    display: none;
+}
+.box3-1 li:hover .sidebar{
+    display: block;
+}
+.nav1 {
+    padding-top: 50px;
+    font-size: 15px;
+    color: rgb(60, 4, 112);
+    text-align: center;
+}
+
+
+.father {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    background-color: palevioletred;
+}
+.son{
+    display: none;
+    position: absolute;
+    background-color: pink;
+    top: 40px;
+    left: 10px;
+    padding: 5px;
+}
+
+.son>li {
+padding: 5px;
+list-style: none;
+
+}
+
+.son li:hover {
+    background-color: palevioletred;
+    color:crimson
+}
+
+.father:hover .son{
+    display: block;
+}
